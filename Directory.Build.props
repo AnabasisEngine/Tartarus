@@ -1,17 +1,25 @@
 <Project>
     <PropertyGroup>
         <TargetFrameworks>netstandard2.1;net7.0;net8.0</TargetFrameworks>
-        <ImplicitUsings>enable</ImplicitUsings>
-        <Nullable>enable</Nullable>
-        <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
-        <LangVersion>preview</LangVersion>
-        <EnablePreviewFeatures>true</EnablePreviewFeatures>
     </PropertyGroup>
-    <ItemGroup>
-        <PackageReference Include="ThisAssembly"/>
-        <PackageReference Include="JetBrains.Annotations"/>
-        <PackageReference Include="DotNet.ReproducibleBuilds" PrivateAssets="All"/>
-        <PackageReference Include="NuGetizer" />
-        <PackageReference Include="Microsoft.Build.CopyOnWrite"/>
-    </ItemGroup>
+    <Choose>
+        <When Condition="$(MSBuildProjectName)!='.sln-items'">
+            <PropertyGroup>
+                <ImplicitUsings>enable</ImplicitUsings>
+                <Nullable>enable</Nullable>
+                <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+                <LangVersion>preview</LangVersion>
+                <EnablePreviewFeatures>true</EnablePreviewFeatures>
+                <RestorePackagesWithLockFile>true</RestorePackagesWithLockFile>
+            </PropertyGroup>
+            <ItemGroup>
+                <PackageReference Include="ThisAssembly"/>
+                <PackageReference Include="JetBrains.Annotations"/>
+                <PackageReference Include="DotNet.ReproducibleBuilds" PrivateAssets="All"/>
+                <PackageReference Include="NuGetizer" />
+                <PackageReference Include="Microsoft.Build.CopyOnWrite"/>
+            </ItemGroup>
+        </When>
+        <Otherwise/>
+    </Choose>
 </Project>

@@ -2,6 +2,7 @@
   <ItemGroup>
     <Content Include=".config\dotnet-tools.json" />
     <Content Include=".github\CODEOWNERS" />
+    <Content Include=".github\workflows\dotnet.yml" />
     <Content Include=".gitignore" />
     <Content Include="Directory.Build.props" />
     <Content Include="Directory.Packages.props" />
