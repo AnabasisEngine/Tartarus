@@ -20,6 +20,8 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageVersion>
+    <PackageVersion Include="Microsoft.Build.CopyOnWrite">
+      <Version>1.0.242</Version>
+    </PackageVersion>
   </ItemGroup>
-
 </Project>
