@@ -17,7 +17,6 @@
                 <PackageReference Include="JetBrains.Annotations"/>
                 <PackageReference Include="DotNet.ReproducibleBuilds" PrivateAssets="All"/>
                 <PackageReference Include="NuGetizer" />
-                <PackageReference Include="Microsoft.Build.CopyOnWrite" Condition="$(ContinuousIntegrationBuild) != true"/>
             </ItemGroup>
         </When>
         <Otherwise/>
