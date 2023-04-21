@@ -1,0 +1,16 @@
+<Project>
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+        <LangVersion>preview</LangVersion>
+        <EnablePreviewFeatures>true</EnablePreviewFeatures>
+    </PropertyGroup>
+    <ItemGroup>
+        <PackageReference Include="ThisAssembly"/>
+        <PackageReference Include="JetBrains.Annotations"/>
+        <PackageReference Include="DotNet.ReproducibleBuilds" PrivateAssets="All"/>
+        <PackageReference Include="NuGetizer" />
+    </ItemGroup>
+</Project>
