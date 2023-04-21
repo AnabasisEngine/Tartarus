@@ -29,8 +29,8 @@ jobs:
         restore-keys: |
           ${{ runner.os }}-nuget
     - name: Restore dependencies
-      run: dotnet restore
+      run: dotnet restore Tartarus.sln
     - name: Build
-      run: dotnet build --no-restore
+      run: dotnet build Tartarus.sln --no-restore
     - name: Test
-      run: dotnet test --no-build --verbosity normal
+      run: dotnet test Tartarus.sln --no-build --verbosity normal
