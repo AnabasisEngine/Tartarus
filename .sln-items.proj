@@ -9,6 +9,7 @@
     <Content Include="global.json" />
     <Content Include="LICENSE" />
     <Content Include="README.md" />
+    <Content Include="version.json" />
   </ItemGroup>
   <ItemGroup>
     <None Include="nuget.config" />

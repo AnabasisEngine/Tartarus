@@ -1,15 +1,12 @@
 <Project>
-
   <PropertyGroup>
     <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
   </PropertyGroup>
-
   <ItemGroup>
     <PackageVersion Include="JetBrains.Annotations">
       <Version>2023.2.0-eap2</Version>
     </PackageVersion>
-    <PackageVersion Include="ThisAssembly">
-      <Version>1.2.13</Version>
+    <PackageVersion Include="ThisAssembly" Version="1.2.14">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageVersion>
@@ -19,8 +16,9 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageVersion>
-    <PackageVersion Include="Microsoft.Build.CopyOnWrite">
-      <Version>1.0.242</Version>
+    <PackageVersion Include="Nerdbank.GitVersioning">
+      <Version>3.6.128</Version>
+      <PrivateAssets>all</PrivateAssets>
     </PackageVersion>
   </ItemGroup>
 </Project>
